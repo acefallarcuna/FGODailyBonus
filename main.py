@@ -29,7 +29,7 @@ def main():
         fgourl.ReadConf()
         fgourl.gameData()
         print(f'待签到: {userNums}个')
-        res = '【登录信息】\n'
+        res = '【Login Information】\n'
         for i in range(userNums):
             try:
                 instance = user(userIds[i], authKeys[i], secretKeys[i])
@@ -45,7 +45,7 @@ def main():
         fgourl.UploadFileToRepo(mytime.GetNowTimeFileName(), res, mytime.GetNowTimeFileName())
         fgourl.SendMessageToAdmin(res)
     else:
-        print('账号密码数量不匹配')
+        print('Login Information is incorrect.')
 
 
 if __name__ == '__main__':
