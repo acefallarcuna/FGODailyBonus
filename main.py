@@ -28,7 +28,7 @@ def main():
     if userNums == authKeyNums and userNums == secretKeyNums:
         fgourl.ReadConf()
         fgourl.gameData()
-        print(f'待签到: {userNums}个')
+        print(f'Signing In: {userNums}个')
         res = '【Login Information】\n'
         for i in range(userNums):
             try:
